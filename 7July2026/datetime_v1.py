@@ -4,6 +4,7 @@ module: datetime
 2) date
 3) time
 4) timedelta
+5) timezone
 """
 
 # import datetime
