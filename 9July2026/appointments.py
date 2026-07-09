@@ -1,9 +1,11 @@
+import datetime
+
 appointments = [
     {
         "appointment_id": 1001,
         "patient_name": "Ali Khan",
         "doctor_name": "Dr. Ahmed",
-        "appointment_date": "15-07-2026",
+        "appointment_date": "9-07-2026",
         "appointment_time": "09:30",
         "reason": "General Checkup",
         "phone": "03001234567"
@@ -25,17 +27,39 @@ appointments = [
         "appointment_time": "15:45",
         "reason": "Eye Examination",
         "phone": "03219876543"
+    },
+{
+        "appointment_id": 1004,
+        "patient_name": "Usman Raza 1",
+        "doctor_name": "Dr. Hassan",
+        "appointment_date": "09-07-2026",
+        "appointment_time": "16:45",
+        "reason": "Eye Examination",
+        "phone": "03219876543"
     }
 ]
 
 """
-1. Add Appointment
-2. View All Appointments
-3. Search Appointment
-4. Cancel Appointment
-5. Today's Appointments
-6. Upcoming Appointments
-7. Appointments This Week
-8. Days Remaining Until Appointment
-9. Exit
+1. Today's Appointments
+2. Upcoming Appointments
+3. Appointments This Week
 """
+
+print("TODAY's Appointments")
+for appointment in appointments:
+    appointment_date = datetime.date.strptime(appointment["appointment_date"], "%d-%m-%Y")
+    if appointment_date == datetime.date.today():
+        print(f"Patient: {appointment["patient_name"]} - Doctor: {appointment["doctor_name"]}")
+
+
+print("UPCOMING Appointments")
+for appointment in appointments:
+    app_date_time_str = f"{appointment["appointment_date"]} {appointment['appointment_time']}"
+    app_date_time_object = datetime.datetime.strptime(app_date_time_str, "%d-%m-%Y %H:%M")
+    if app_date_time_object > datetime.datetime.today() and app_date_time_object.date() == datetime.date.today():
+        print(f"Patient: {appointment["patient_name"]} - Doctor: {appointment["doctor_name"]}")
+
+print("Appointments This Week")
+for appointment in appointments:
+    pass
+
