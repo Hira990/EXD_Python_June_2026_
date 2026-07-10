@@ -14,7 +14,7 @@ The function should:
 - Accept valid email formats
 - Reject invalid emails
 - Support:
-    Gmail, Yahoo, Company domains, .com, .pk, .co.uk
+    Gmail, Yahoo, .com, .pk, .co.uk
 
 Expected Output:
 ali@gmail.com -> Valid
@@ -112,7 +112,7 @@ http://example.com/page
 ============================================================
 
 comment = "
-This     product is GREAT!!!
+This         product is GREAT!!!
 
 I really love it.......
 Thank you!!!
