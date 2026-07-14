@@ -15,6 +15,8 @@ Total Logs: ?
 INFO Logs: ?
 WARNING Logs: ?
 ERROR Logs: ?
+
+
 Level 2: Separate Log Files
 Requirements:
 1. Read all logs from server_logs.txt.
@@ -24,6 +26,9 @@ Requirements:
 - error_logs.txt
 
 3. Store only relevant logs in each file.
+
+
+
 Level 3: Advanced Log Analysis
 Requirements:
 1. Find the most common error message.
@@ -41,6 +46,10 @@ ali
 Errors By Service:
 authentication: 5
 payments: 3
+
+
+
+
 Level 4: Generate Daily Report
 Requirements:
 Create a file named daily_report.txt.
