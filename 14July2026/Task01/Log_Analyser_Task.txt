@@ -1,0 +1,77 @@
+Python File Handling Assignment: Log Analyzer
+Scenario:
+A server generates logs every day. You are required to build a Log Analyzer program using Python file handling. The input file is server_logs.txt.
+Level 1: Basic Log Analysis
+Requirements:
+1. Read the server_logs.txt file.
+2. Count total number of logs.
+3. Count logs by level:
+- INFO
+- WARNING
+- ERROR
+
+Expected Output:
+Total Logs: ?
+INFO Logs: ?
+WARNING Logs: ?
+ERROR Logs: ?
+Level 2: Separate Log Files
+Requirements:
+1. Read all logs from server_logs.txt.
+2. Create separate files:
+- info_logs.txt
+- warning_logs.txt
+- error_logs.txt
+
+3. Store only relevant logs in each file.
+Level 3: Advanced Log Analysis
+Requirements:
+1. Find the most common error message.
+2. Find the most active user from logs.
+3. Count errors by service.
+
+Expected Output Example:
+
+Most Common Error:
+Database connection failed
+
+Most Active User:
+ali
+
+Errors By Service:
+authentication: 5
+payments: 3
+Level 4: Generate Daily Report
+Requirements:
+Create a file named daily_report.txt.
+
+The report should contain:
+- Date wise log summary
+- Total INFO logs
+- Total WARNING logs
+- Total ERROR logs
+- List of critical issues
+
+Example Format:
+
+Server Log Report
+=================
+
+Date: 2026-07-01
+
+INFO: 10
+WARNING: 5
+ERROR: 3
+
+Critical Issues:
+- Database connection failed
+- Payment service unavailable
+Learning Objectives
+Students will practice:
+- File reading and writing
+- Text processing
+- String parsing
+- Dictionaries and counters
+- Data aggregation
+- Report generation
+- Real-world log analysis concepts
