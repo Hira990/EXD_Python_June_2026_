@@ -1,3 +1,5 @@
+# 3
+
 from collections import Counter
 
 users = []
