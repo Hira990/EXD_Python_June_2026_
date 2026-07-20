@@ -3,6 +3,8 @@ pip install requests
 """
 
 """
+
+
 Status Codes:
 - 201 Created
 - 200: OK
@@ -12,9 +14,9 @@ Status Codes:
 
 import requests
 
-response = requests.get("http://www.google.com")
-
-print(response.status_code)
+# response = requests.get("http://www.google.com")
+#
+# print(response.status_code)
 # print(response.text)
 
 print("=========================")
@@ -22,6 +24,7 @@ print("=========================")
 response = requests.get("https://dummyjson.com/products")
 
 print(response.status_code)
+print(response.json())
 if response.status_code == 200:
     print("ok")
     products_in_json = response.json()
