@@ -32,17 +32,30 @@ while True:
         print(job_title)
         print(company_name)
 
-        job_type_span = soup.find("span", class_="listing-job-type")
+        job_type_span = item.find("span", class_="listing-job-type")
         job_type_a_tags = job_type_span.find_all("a")
         job_tags = []
         for a_tag in job_type_a_tags:
             job_tags.append(a_tag.get_text(strip=True))
         print(job_tags)
+
+        date_posted_span = item.find("span", class_="listing-posted")
+        date_posted = date_posted_span.find("time").get_text(strip=True)
+
+        category_span = item.find("span", class_="listing-company-category")
+        category = category_span.find("a").get_text(strip=True)
+
+        location_span = item.find("span", class_="listing-location")
+        location = location_span.find("a").get_text(strip=True)
+
         print("--------------")
         job_object = {
             "title": job_title,
             "company": company_name,
-            "tags": job_tags
+            "tags": job_tags,
+            "date_posted": date_posted,
+            "category": category,
+            "location": location
         }
         jobs.append(job_object)
 
@@ -58,5 +71,7 @@ with open(f"jobs/{file_name}", "w") as f:
     json.dump(jobs, f, indent=4)
 
 print("File saved")
+
+
 
 
