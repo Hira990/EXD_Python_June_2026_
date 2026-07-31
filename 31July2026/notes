@@ -2,3 +2,35 @@ just to know about xml
 
 how to read xml and parse in python
 
+
+
+"patient"
+patient_id (pk)
+patient_name (varchar)"
+
+"patient_medical_info"
+patient_id (fk)
+b_G
+height
+wright
+b_G
+height
+wright
+b_G
+height
+wright
+b_G
+height
+wright
+
+1, iftikhar
+2, ali
+
+"patient_phone_numbers"
+p_p_n_pk (pk)
+patient_id (fk)
+phone_number = "34567898"
+
+1, 2, 33645678
+1, 2, 33645678
+
