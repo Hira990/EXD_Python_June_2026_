@@ -2,3 +2,6 @@
 More Tables = Normalization
 
 Less Table = Denormalization
+
+
+https://docs.google.com/spreadsheets/d/19LUOE3n0hlKyU5THtIYqhz6IGBkzizf3IWWrcAHgdIE/edit?usp=sharing
