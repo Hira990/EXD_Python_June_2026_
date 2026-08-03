@@ -1,0 +1,4 @@
+
+More Tables = Normalization
+
+Less Table = Denormalization
