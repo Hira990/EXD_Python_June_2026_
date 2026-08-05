@@ -1,0 +1,33 @@
+1) New Empty Python Project with a fresh Environment
+
+2) Install Django
+pip install django
+
+3) Start the Django Project
+django-admin startproject LibraryDjango .
+
+4) python manage.py runserver
+
+5) Admin Panel
+127.0.0.1:8000/admin
+
+6)
+python manage.py makemigrations (jb b koi change krna models me)
+python manage.py migrate (us change ko db me reflect krna)
+
+7)
+python manage.py createsuperuser
+
+8) Create an app
+python manage.py startapp core
+
+9)
+connect MySQL
+pip install mysqlclient
+agr mariadb wala error : pip install "django==4.2.23"
+maria db error fix
+
+imp
+admin.py me register krna
+
+
