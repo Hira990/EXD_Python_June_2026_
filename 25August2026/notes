@@ -1,3 +1,26 @@
 https://themewagon.com/themes/adminhmd/
 
 Download this template and setup in DjangoExpenseTracker Project
+
+
+######## topics touched
+
+models
+admin
+urls
+views
+sqlite connection
+
+settings me static ki setting, db setting, templates setting
+
+########## to do
+
+ap k end pe
+complete list views
+dashboard
+
+
+mery end pe
+1) login form
+2) add, edit, delete (using django model forms)
+3) templatetags
