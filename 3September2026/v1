@@ -3,3 +3,13 @@ cursor
 ngrok
 
 https://heartbroken-frangible-gwen.ngrok-free.dev/get-tickets
+
+
+complete all cruds
+
+tickets (get, with filters)
+post, patch, put, delete
+
+=================
+
+render an html in fastapi

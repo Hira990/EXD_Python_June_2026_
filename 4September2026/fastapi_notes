@@ -1,0 +1,16 @@
+
+TO DO:
+
+app -> router (multiple files) (to do)
+
+Database + SQLAlchemy
+
+Authentication & authorization
+
+Dependency Injection
+
+Background Tasks
+
+Logging
+
+env files
